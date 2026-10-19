@@ -108,14 +108,14 @@ font:
   family: "Barlow Semi Condensed"
   title_family: "Barlow Semi Condensed"
   month_second_family: "Barlow Semi Condensed"
-  year_title_size: 40.0
-  month_title_size: 50.0
-  month_second_size: 40.0
-  weekday_size: 18.0
-  day_size: 25.0
-  holiday_size: 15
-  legend_size: 14
-  legend_title_size: 5
+  year_title_size: 0.0
+  month_title_size: 54
+  month_second_size: 54
+  weekday_size: 16
+  day_size: 23
+  holiday_size: 13
+  legend_size: 13
+  legend_title_size: 0
   title_weight: 700
   day_weight: 500
   weekend_weight: 700
@@ -137,13 +137,13 @@ palette:
   grid: 'transparent'
 layout:
   columns: 3
-  cell_width: 90.0
-  cell_height: 60.0
-  month_padding: 12.0
-  gap_x: 26.0
-  gap_y: 34.0
-  page_padding: 10.0
-  year_title_height: 86.0
+  cell_width: 80.0
+  cell_height: 50.0
+  month_padding: 0
+  gap_x: 0.0
+  gap_y: 0.0
+  page_padding: 0
+  year_title_height: 0
   grid_lines: true
   uppercase_titles: false
   show_holiday_names: false
@@ -154,6 +154,6 @@ layout:
   legend_style: inline
   legend_title: ''
   legend_name_lines: 0
-  legend_gap: 0.0
+  legend_gap: 20
   single_month_rows: 6
-  single_month_scale: 2.0
+  single_month_scale: 1.0
