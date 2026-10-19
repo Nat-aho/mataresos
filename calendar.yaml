@@ -1,0 +1,159 @@
+# Configurazione Mataresos: calendari SVG personalizzabili.
+#
+# Ogni sezione e' opzionale. I valori elencati sono i default: modifica solo
+# cio' che ti serve e il resto resta invariato.
+#
+#   calendar.week_start     lunedi' di partenza della settimana (nome, nome
+#                           inglese o indice 0-6 dove 0 = lunedi')
+#   calendar.weekend        giorni considerati fine settimana
+#   calendar.fixed_weeks    true = ogni mese occupa 6 righe (griglia allineata)
+#   months.names            12 nomi di mese, da gennaio a dicembre
+#   days.names / days.short 7 nomi di giorno, da lunedi' a domenica
+#   holidays                date fisse "MM-GG": nome  (sostituisce i default)
+#   font                    famiglia, corpi tipografici e pesi
+#   palette                 colori (qualsiasi valore CSS)
+#   layout                  geometria in px, colonne, titoli maiuscoli
+#
+# Uso:  mataresos --year 2026 --config calendar.yaml
+calendar:
+  week_start: monday
+  weekend:
+  - sunday
+  fixed_weeks: true
+months:
+  names:
+  - Gener
+  - Febrer
+  - Març
+  - Abril
+  - Maig
+  - Juny
+  - Juliol
+  - Agost
+  - Setembre
+  - Octubre
+  - Novembre
+  - Desembre
+  second_names:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Cavidani
+  - Santuaïni
+  - Sant Andria
+  - Nadal
+days:
+  names:
+  - Dilluns
+  - Dimarts
+  - Dimecres
+  - Dijous
+  - Divendres
+  - Dissabte
+  - Diumenge
+  short:
+  - DL
+  - DT
+  - DC
+  - DJ
+  - DV
+  - DS
+  - DG
+holidays:
+  01-01: Cap d’Any
+  01-06: 
+    - Los Tres Reis
+    - Les Estrenes
+  02-09: Carraixali
+  02-10: Les Cendres
+  03-21: Diumenge de Palmes
+  03-26: Divendres Sant
+  03-28: Pasqua de Resurrecció
+  03-29: 
+    - Pasqüeta
+    - Dilluns de l'Àngel
+  04-25:
+    - Festa de la Liberació
+    - S. Marc
+  05-01: Festa del Treball
+  06-02: Festa de la República
+  06-24: S. Joan Baptista
+  08-15: 
+    - Mig Agost
+    - Assumpció de Maria
+    - N. S. de basa-peus
+  09-29:
+  - S. Miquel - Patró de l’Alguer
+  10-04:
+  - S. Francesc de Assís - Patró d’Itàlia
+  11-01: Tots los Sants
+  11-02:
+  - Commemoració dels Morts
+  12-08: La Puríssima
+  12-25: Nadal de Nostre Senyor
+  12-26: S. Esteve, pròtomàrtir
+special_dates:
+  # Le tue ricorrenze: pallino giallo, numero e nome rossi (palette.special_*).
+  # Stesso formato di holidays: "MM-GG": nome, oppure una lista di righe.
+  # Se una data e' anche una festivita', vince la data speciale.
+  09-11:
+   - Aniversari Mataresos de l'Alguer
+   - Diada Nacional de Catalunya
+font:
+  family: "Barlow Semi Condensed"
+  title_family: "Barlow Semi Condensed"
+  month_second_family: "Barlow Semi Condensed"
+  year_title_size: 40.0
+  month_title_size: 50.0
+  month_second_size: 40.0
+  weekday_size: 18.0
+  day_size: 25.0
+  holiday_size: 15
+  legend_size: 14
+  legend_title_size: 5
+  title_weight: 700
+  day_weight: 500
+  weekend_weight: 700
+  holiday_weight: 700
+  title_letter_spacing: 1.0
+palette:
+  page_background: 'transparent'
+  month_background: 'transparent'
+  month_border: 'transparent'
+  title: '#ff4242'
+  month_second: '#6b6b6b'
+  weekday: '#6b6b6b'
+  weekday_weekend: '#ff4242'
+  day: '#242424'
+  day_weekend: '#ff4242'
+  holiday_background: '#ff4242'
+  holiday_day: '#ffffff'
+  holiday_name: '#242424'
+  grid: 'transparent'
+layout:
+  columns: 3
+  cell_width: 90.0
+  cell_height: 60.0
+  month_padding: 12.0
+  gap_x: 26.0
+  gap_y: 34.0
+  page_padding: 10.0
+  year_title_height: 86.0
+  grid_lines: true
+  uppercase_titles: false
+  show_holiday_names: false
+  holiday_name_lines: 0
+  month_second_position: beside
+  show_holiday_legend: true
+  legend_columns: 1
+  legend_style: inline
+  legend_title: ''
+  legend_name_lines: 0
+  legend_gap: 0.0
+  single_month_rows: 6
+  single_month_scale: 2.0
